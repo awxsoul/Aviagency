@@ -1,0 +1,41 @@
+
+
+---------records of bangalore and thiuvananthapuram-------
+
+insert into schedule values ( 'Indigo', 'Thiruvananthapuram', 'Bangalore','18:05','19:25',4146);
+insert into schedule values ( 'Indigo', 'Bangalore', 'Thiruvananthapuram','08:00','09:20',3766);
+insert into schedule values ( 'Indigo', 'Bangalore', 'Thiruvananthapuram','16:10','17:20',4081);
+insert into schedule values ( 'Spicejet', 'Thiruvananthapuram', 'New Delhi','09:20','12:35',8663);
+insert into schedule values ( 'Vistara', 'Thiruvananthapuram', 'New Delhi','11:30','14:45',8662);
+insert into schedule values ( 'Vistara','New Delhi','Thiruvananthapuram','07:00','10:15',8153);
+insert into schedule values ( 'Indigo','New Delhi','Thiruvananthapuram','22:30','01:45',8155);
+insert into schedule values ( 'Indigo', 'Thiruvananthapuram', 'Kolkata','18:05','00:05',6509);
+insert into schedule values ( 'Spicejet', 'Thiruvananthapuram', 'Kolkata','09:20','15:20',8665);
+insert into schedule values ( 'Indigo', 'Thiruvananthapuram', 'Chennai','11:50','13:25',3740);
+insert into schedule values ( 'Air India', 'Thiruvananthapuram', 'Chennai','17:50','19:25',3745);
+insert into schedule values ( 'Indigo', 'Thiruvananthapuram', 'Mumbai','11:50','13:55',4986);
+insert into schedule values ( 'Spicejet', 'Thiruvananthapuram', 'Mumbai','09:20','11:25',4986);
+insert into schedule values ( 'Indigo', 'Bangalore', 'New Delhi','07:15','10:00',6761);
+insert into schedule values ( 'Indigo', 'Bangalore', 'New Delhi','21:40','00:25',6761);
+insert into schedule values ( 'AirAsia', 'Bangalore', 'Kolkata','13:30','16:00',5129);
+insert into schedule values ( 'AirAsia', 'Bangalore', 'Kolkata','21:35','00:10',5129);
+insert into schedule values ( 'Indigo', 'Bangalore', 'Chennai,'16:45','17:40',3481);
+insert into schedule values ( 'AirAsia', 'Bangalore', 'Chennai,'06:10','07:05',3556);
+insert into schedule values ( 'Indigo', 'Bangalore', 'Mumbai','09:10','10:50',5019);
+insert into schedule values ( 'AirAsia', 'Bangalore', 'Mumbai','20:45','22:35',5129);
+insert into schedule values ( 'Indigo', 'Mumbai', 'Bangalore','18:55','20:25',4431);
+insert into schedule values ( 'Go Air', 'Mumbai', 'Bangalore','07:00','08:35',4531);
+insert into schedule values ( 'Indigo', 'Chennai', 'Bangalore','07:55','08:50',2935);
+insert into schedule values ( 'AirAsia', 'Chennai', 'Bangalore','18:10','19:15',3000);
+insert into schedule values ( 'Indigo', 'Kolkata', 'Bangalore','06:15','09:00',5490);
+insert into schedule values ( 'AirAsia', 'Kolkata', 'Bangalore','18:55','21:25',5600);
+insert into schedule values ( 'Indigo', 'New Delhi', 'Bangalore','05:00','07:40',5918);
+insert into schedule values ( 'AirAsia', 'New Delhi', 'Bangalore','20:15','23:00',6053);
+insert into schedule values ( 'Spicejet', 'Mumbai', 'Thiruvananthapuram','06:25','08:40',5055);
+insert into schedule values ( 'Indigo', 'Mumbai', 'Thiruvananthapuram','16:05','18:10',5056);
+insert into schedule values ( 'Air India', 'Chennai', 'Thiruvananthapuram','10:35','11:50',4282);
+insert into schedule values ( 'Indigo', 'Chennai', 'Thiruvananthapuram','09:45','11:10',3289);
+insert into schedule values ( 'Spicejet', 'Kolkata', 'Thiruvananthapuram','22:05','08:40',7182);
+insert into schedule values ( 'Indigo', 'Kolkata', 'Thiruvananthapuram','06:15','16:50,7282);
+
+----------------------------------------------------------------------------------
