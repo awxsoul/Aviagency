@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> Aviagency </title>
+    <link rel="icon" href="{{ url_for('static', filename='/img/favicon.ico')}}" type="image/x-icon"> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/homepage.css')}}">
+    </head>
+
+    <body>
+        <h1>
+            <logo><img src="{{ url_for('static', filename='/img/logodaw.png')}}"></logo> 
+            AVIAGENCY
+        </h1>
+        <h2>404 Error :(</h2>
+        <p>What you were looking for is just not there.<p>
+        <a href="{{ url_for('afterauthen') }}">go somewhere nice</a>
+
+
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="/Aviagency/contact">Contact</a></li>
+            <li><a href="/Aviagency/aboutus">About</a></li>
+        </ul> 
+
+    </body>
+</html>

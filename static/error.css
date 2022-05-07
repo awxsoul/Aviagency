@@ -1,0 +1,171 @@
+        /*imported font 'Reem Kufi'*/
+        @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+        
+        body {
+                background-image: url('img/bgi.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;  
+                background-size:cover;
+                background-position-x: 50% ;
+                background-position-y: 50%;
+                background-size: auto; 
+                margin: 0px
+        }
+
+        img {
+            height: 70px;
+            width: 70px;
+            border-radius: 64px;
+            border-color: white ;
+            border-width: 0.5px;
+            border-style: groove;
+        }
+
+        h1 {    
+                color:rgb(0, 0, 0);
+                font-family: 'Reem Kufi', sans-serif;
+                font-size: 80px;
+                text-align:center;
+                color: white;
+        }
+        
+        tag {    /*tag line*/
+                color:rgb(0, 0, 0);
+                font-family: 'Reem Kufi', sans-serif;
+                font-size: 15px;
+                text-align:center;
+                margin-bottom: 50px;
+                color: white;
+        }
+        
+        h3 {
+            color:rgb(0, 0, 0);
+            font-family: 'Reem Kufi', sans-serif;
+            font-size: 25px;
+            text-align:center;  
+            padding: 2px;
+        }
+
+        e {
+            font-family: 'Reem Kufi', sans-serif;
+            font-size: 15px;
+            text-align:center;  
+            padding: 1px;
+            color: red;
+        }
+        
+        form{
+                margin-top: 16px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                right: 50%;
+                bottom: 50%;
+                transform: translate(-50%,-50%);
+                width: 290px;
+                height: 290px;
+                background: rgb(255, 255, 255);
+                border-radius: 360px;
+                border-style: groove;;
+                border-color: black;
+                padding: 40px;
+                
+        }
+        
+        b {
+            color: black;
+            font-family: 'Reem Kufi';
+            font-size: 18px;
+        }
+        input[type=text], input[type=password] {
+                width: 150px;
+                padding: 8px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                border-radius: 64px;
+                background-color: rgb(212, 211, 211);
+                
+        }
+        
+        input[type=text]:focus, input[type=password]:focus {
+                background-color: #ddd;
+                outline: none;
+        }
+        
+        /*sign up button*/
+        v2 {
+            float:right;
+        }
+
+        button {
+            background-color: #000000;
+            font-family: 'Reem Kufi';
+            color: rgb(255, 255, 255);
+            padding: 10px 15px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 70px;
+            opacity: 0.9;
+            text-align: center;
+            border-radius: 64px;
+        }
+
+        button:hover {
+            opacity:1;
+            color:black;
+            background-color: white;
+            border-color: black;
+            border-style: double;
+            border-width: 1px ;
+            padding: 9px 14px;
+        }
+
+
+        /* Float submit and canvel buttons and add an equal width */
+        .submitbtn, .cancelbtn {
+            text-align: center;
+            width: 70px;
+        }
+
+        /* Add padding to container elements */
+        .container {
+            text-align: center;
+            padding: 2px;
+            position: relative;
+        }
+
+
+        /*navigation bar*/
+        ul {
+            list-style-type: none;
+            margin: 2;
+            padding: 0;
+            position: fixed;
+            bottom: 0;
+            width: 97%;
+        }
+        /*horizontal bar*/
+        li {
+            display: inline;
+            
+        }
+        /*components of horizontal bar*/
+        li a {
+            display: block;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            text-align: center;
+            padding: 5px 20px ;
+            text-decoration: none;
+            font-family: "Reem Kufi";
+            float: left;
+            color: white;
+        }
+        
+        li a:hover {
+            background-color:white;
+            border-radius: 32px;
+            color: black;
+            }

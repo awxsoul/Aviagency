@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title> Aviagency </title>
+    <link rel="icon" href="{{ url_for('static', filename='/img/favicon.ico')}}" type="image/x-icon"> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/confirm.css')}}">
+    </head>
+
+    <body>
+        <h1>
+            <logo><img src="{{ url_for('static', filename='/img/logodaw.png')}}"></logo> 
+            <z><a href="/Aviagency/home/welcome">AVIAGENCY</a></z>
+        </h1>
+        <h>
+        Your ticket<br>
+        has been <br>
+        booked successfully. <br>   
+        Thank you for choosing<br>
+        Aviagency.<br>
+        </h>
+        <g>
+        <form action="{{url_for('seat')}}" method="POST">
+            <label> <e>{{aw}}</e> </label><br><hr>
+            <label> <e>{{dep}}</e> ────➤ <e>{{des}}</e> </label><br>
+            <label> ETD : {{ETD}} </label>
+            <label><g> ETA : {{ETA}} </g></label><br>
+            <label> Date : {{dat}} </label><br>
+            <hr>
+            <label for="fname">PASSENGER DETAILS:</label>
+            <br>
+
+            <table>
+                <tr>
+                <sr>Name</sr>
+                <sr>Gender</sr>
+                <sr>Age</sr>
+                </tr>
+                {% for i in data %} 
+                <tr>       
+                <td><label>{{i[0]}}</label></td>
+                <td><label for="Age">{{i[1]}}</label></td>
+                <td><label for=" Gender ">{{i[2]}}</label></td>
+                </tr>
+                {% endfor %}
+            </table>
+
+
+
+            <hr>
+            <label><p> Price : ₹ <e>{{prc}}</e> </p> </label>
+        </form>
+        </g>
+        <ul>
+            <li><a href="/Aviagency/home/welcome">Home</a></li>
+            <li><a href="/Aviagency/contact">Contact</a></li>
+            <li><a href="/Aviagency/aboutus">About</a></li>
+        </ul> 
+
+    </body>
+</html>

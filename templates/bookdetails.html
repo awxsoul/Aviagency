@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title> Aviagency </title>
+    <link rel="icon" href="{{ url_for('static', filename='/img/favicon.ico')}}" type="image/x-icon"> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/bookdetails.css')}}">
+    </head>
+
+    <body>
+        <h1>
+            <logo><img src="{{ url_for('static', filename='/img/logodaw.png')}}"></logo> 
+            <z><a href="/Aviagency/home/welcome">AVIAGENCY</a></z>
+        </h1>
+        
+        <d>
+        
+        </d>
+        <l>
+            <form method="POST" action="{{url_for('details')}}">
+                <h2>PASSENGER DETAILS </h2>
+                <hr>
+                {% for l in range(1,(x+1)) %}
+                <label >Passenger {{l}}: </label>
+                <label for="fname">Name : </label>
+                <input type="text" id="fname" name="name"  required>
+
+                <label for="Age">Age : </label>
+                <input type="number" id="Age" name="Age" min="1" required>
+
+                <label for=" Gender ">Gender : </label>
+                <select id="Gender" name="Gender" required>
+                  <option value=""disabled selected hidden></option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other</option>
+                </select><br><hr>
+                {% endfor %} 
+                <br>
+                <button type="submit"> CONFIRM TICKET </button> <br>
+            </form>
+        </l>  
+        
+        <ul>
+            <li><a href="/Aviagency/home/welcome">Home</a></li>
+            <li><a href="/Aviagency/contact">Contact</a></li>
+            <li><a href="/Aviagency/aboutus">About</a></li>
+        </ul> 
+
+    </body>
+</html>

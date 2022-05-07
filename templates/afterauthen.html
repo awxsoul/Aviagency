@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title> Aviagency </title>
+    <link rel="icon" href="{{ url_for('static', filename='/img/favicon.ico')}}" type="image/x-icon"> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/afterauthen.css')}}">
+    </head>
+
+    <body>
+        <h1>
+            <logo><img src="{{ url_for('static', filename='img/logodaw.png')}}"></logo> 
+                <z><a href="/Aviagency/home/welcome">AVIAGENCY</a></z><br>
+            <hnb>
+                <ul>
+                    <li><a href="welcome">Home</a></li>
+                    <li><a href="/Aviagency/contact">Contact</a></li>
+                    <li><a href="/Aviagency/aboutus">About</a></li>
+                </ul>
+            </hnb>
+        </h1>
+        <h2>
+            Welcome {{n}}
+        </h2>
+
+
+        <vnb>
+            <ul>
+                <li><a href="welcome/bookticket">Book ticket</a></li><br>
+                <li><a href="/Avigency/home/welcome/bookedticket">Booked flights</a></li><br>
+                <li><a href="/Aviagency/home/welcome/cancelticket">Cancel ticket</a></li><br>
+                <li><a href="/Aviagency/home/login">Log out</a></li>
+            </ul>
+        </vnb>
+
+    </body>
+</html>

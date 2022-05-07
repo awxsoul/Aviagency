@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title> Aviagency </title>
+    <link rel="icon" href="{{ url_for('static', filename='/img/favicon.ico')}}" type="image/x-icon"> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/bookticket.css')}}">   
+    </head>
+
+    <body>
+        <h1>
+            <logo><img src="{{ url_for('static', filename='/img/logodaw.png')}}" class="logo" ></logo>
+            <z><a href="/Aviagency/home/welcome">AVIAGENCY</a></z>
+        </h1>
+
+        <form  method="POST">
+            <h2>
+                CHOOSE YOUR DEPARTURE AND DESTINATION
+                <s>
+                    <d><input type="date" name="date" min='{{t}}' id="iddob" class="input-field" required></d>
+                    <button type="submit" >Search for flights</button>
+                    <br> <e>{{i}}</e>
+                </s>
+            </h2>
+            <br><br><br><br>
+            <br><br><br><br>
+
+            <lb><select id="dropdown" name="Departure" class="dropdown" required>
+                <option value=""disabled selected hidden>Departure</option>
+                <option value="New Delhi">New Delhi</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                <option value="Bangalore">Bangalore</option>
+            </select></lb>
+
+            
+
+            <rb><select id="dropdown" name="Destination" class="dropdown" required>
+                <option value=""disabled selected hidden>Destination</option>
+                <option value="New Delhi">New Delhi</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                
+            </select></rb>
+            
+
+        </form>
+
+        <ul>
+            <li><a href="/Aviagency/home/welcome">Home</a></li>
+            <li><a href="/Aviagency/contact">Contact</a></li>
+            <li><a href="/Aviagency/aboutus">About</a></li>
+        </ul> 
+
+        <form>
+            
+
+        </form>
+
+    </body>
+</html>

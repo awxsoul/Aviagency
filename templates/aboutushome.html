@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title> Aviagency </title>
+    <link rel="icon" href="{{ url_for('static', filename='/img/favicon.ico')}}" type="image/x-icon"> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/aboutus.css')}}">
+    </head>
+
+    <body>
+        <h1>
+            <logo><img src="{{ url_for('static', filename='/img/logodaw.png')}}"></logo> 
+            AVIAGENCY
+        </h1>
+        <h2>About Us</h2>
+        <p>Aviagency is a brand new travel agency created for the users to book domestic airline tickets from the comfort of their home. We aim to become the king of 
+            the skies by slowly expanding our flight routes and
+             becoming an international agency.
+        <p>
+
+        <ul>
+            <li><a href="/Aviagency/home/login">Home</a></li>
+            <li><a href='/Aviagency/home/contact'>Contact</a></li>
+            <li><a href='/Aviagency/home/aboutus'>About</a></li>
+        </ul> 
+
+    </body>
+</html>

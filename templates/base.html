@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <style>
+
+            /*imported font 'Reem Kufi'*/
+            @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+
+            body {
+                background-color:rgb(117, 167, 189); 
+            }
+
+            img {
+                height: 50px;
+                width: 50px;
+            }
+
+            h1 {    
+                font-family: "Reem Kufi";
+                font-size: 50px;
+            }
+            
+            /*navigation bar*/
+            ul {
+                list-style-type: none;
+                margin: 2;
+                padding: 0;
+                position: fixed;
+                bottom: 0;
+                width: 97%;
+                padding-bottom: 8px;
+                }
+
+            /*horizontal bar*/
+            li {
+                display: inline;
+                
+            }
+            /*components of horizontal bar*/
+            li a {
+                display: block;
+                color: rgb(0, 0, 0);
+                font-size: 20px;
+                text-align: center;
+                padding: 5px 20px ;
+                text-decoration: none;
+                font-family: "Reem Kufi";
+                float: left;
+            }
+            
+            li a:hover {
+                background-color:white;
+                border-radius: 32px;
+                }
+
+            li b {
+                display: block;
+                color: rgb(0, 0, 0);
+                font-size: 20px;
+                text-align: center;
+                padding: 5px 20px ;
+                text-decoration: none;
+                font-family: "Reem Kufi";
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>
+            <logo><img src="img/logodaw.jpg"></logo> 
+            AVIAGENCY
+        </h1>
+        {{c}}
+
+
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="/Aviagency/contact">Contact</a></li>
+            <li><a href="/Aviagency/aboutus">About</a></li>
+        </ul> 
+
+    </body>
+</html>

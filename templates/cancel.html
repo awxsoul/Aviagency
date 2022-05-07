@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> Aviagency </title>
+    <link rel="icon" href="{{ url_for('static', filename='/img/favicon.ico')}}" type="image/x-icon"> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/cancel.css')}}">
+    </head>
+
+    <body>
+        <h1>
+            <logo><img src="{{ url_for('static', filename='/img/logodaw.png')}}"></logo> 
+            <z><a href="/Aviagency/home/welcome">AVIAGENCY</a></z>
+        </h1>
+        <g>
+        <form action="{{ url_for('cancel__ticket2')}}" method="POST">
+        <h2>CANCEL YOUR TICKET</h2>
+            {{notickets}}
+            {% for i in info %}
+            <r>
+            <label> <e>{{aw}}</e> </label><br><hr>
+            <label> <e>{{i[5]}}</e> ────➤ <e>{{i[6]}}</e> </label><br>
+            <label> ETD : {{i[7]}} </label>
+            <label> <g> ETA : {{i[8]}} </g> </label><br>
+            <label> Date : {{i[9]}} </label><br>
+            <label> Name : {{i[0]}}</label>
+            <label for="Age">Age : {{i[4]}}</label>
+            <label for=" Gender ">Gender : {{i[2]}}</label><br>
+            </r>
+            {% set count = info.index(i) %}
+            <br><button name="cancel" type="submit" value={{count}}>CANCEL</button></br>
+            {% endfor %}
+
+        </form>
+        </g>
+        <ul>
+            <li><a href="/Aviagency/home/welcome">Home</a></li>
+            <li><a href="/Aviagency/contact">Contact</a></li>
+            <li><a href="/Aviagency/aboutus">About</a></li>
+        </ul> 
+
+    </body>
+</html>

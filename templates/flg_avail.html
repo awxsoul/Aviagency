@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title> Aviagency </title>
+    <link rel="icon" href="{{ url_for('static', filename='/img/favicon.ico')}}" type="image/x-icon"> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/flg_avail.css')}}">
+    </head>
+
+    <body>
+        <h1>
+            <logo><img src="{{ url_for('static', filename='/img/logodaw.png')}}"></logo> 
+            <z><a href="/Aviagency/home/welcome">AVIAGENCY</a></z>
+        </h1>
+        <h2>AVAILABLE FLIGHTS : </h2>
+
+        <r>
+            <form action="{{url_for('seat')}}" method="POST">
+                <label> <e>{{aw2}}</e> </label><br>
+                <label> <e>{{dep}}</e>───➤<e>{{des}}</e> </label><br>
+                <label> ETD : {{ETD2}} </label><br>
+                <label> ETA : {{ETA2}} </label><br>
+                <label> Date : {{date}} </label><br>
+                <label> Price : ₹ <e>{{prc2}}</e> </label>
+                <br><br><hr>
+                <label> Tickets available : {{ticket_available2}} </label> <br>
+                <label for="seats">No. of seats : </label>
+                <input type="number" id="seats" name="seats" min="1" max="{{ticket_available1}}"  required>
+                <button name="b1" type="submit" value="2">BOOK TICKET</button>
+            </form>
+        </r>
+        <l>
+            <form action="{{url_for('seat')}}" method="POST">
+                <label> <e>{{aw1}}</e> </label><br>
+                <label> <e>{{dep}}</e>───➤<e>{{des}}</e> </label><br>
+                <label> ETD : {{ETD1}} </label><br>
+                <label> ETA : {{ETA1}} </label><br>
+                <label> Date : {{date}} </label><br>
+                <label> Price : ₹ <e>{{prc1}}</e> </label>
+                <br><br><hr>
+                <label> Tickets available : {{ticket_available1}} </label> <br>
+                <label for="seats">No. of seats : </label>
+                <input type="number" id="seats" name="seats" min="1" max="{{ticket_available2}}"  required>
+                <button name="b1" type="submit" value="1">BOOK TICKET</button><br>
+            </form>
+        </l>
+
+        <ul>
+            <li><a href='/Aviagency/home/welcome'>Home</a></li>
+            <li><a href="/Aviagency/contact">Contact</a></li>
+            <li><a href="/Aviagency/aboutus">About</a></li>
+        </ul> 
+
+    </body>
+</html>

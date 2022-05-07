@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title> Aviagency </title>
+    <link rel="icon" href="{{ url_for('static', filename='/img/favicon.ico')}}" type="image/x-icon"> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/signup.css')}}">
+    
+    </head>
+
+        <body>
+
+            <h1>
+                <logo><img src="{{ url_for('static', filename='/img/logodaw.png')}}"></logo> 
+                AVIAGENCY
+            </h1>
+
+
+            <ul>
+                <li><a href="/Aviagency/home/login">Home</a></li>
+                <li><a href="/Aviagency/home/contact">Contact</a></li>
+                <li><a href="/Aviagency/home/aboutus">About</a></li>
+            </ul> 
+
+            <form  method="POST">
+                <div class="container">
+                  <h2>Sign Up</h2>
+
+                  <v3><label for="username"><b>Username : </b></label>
+                  <input type="text" placeholder="Enter username" name="username" required></v3>
+            
+                  <v3><label for="email"><b>Email :</b></label>
+                  <input type="email" placeholder="Enter Email" name="email" required></v3>
+              
+                  <v3><label for="psw"><b>Password :  </b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required></v3>
+              
+                  <v3><label for="psw-repeat"><b>Confirm Password : </b></label>
+                  <input type="password" placeholder="Confirm Password" name="psw-repeat" required></v3>
+
+                  <v3><label for="ph-no"><b>Phone number : </b></label>
+                  <input type="text" placeholder="Enter phone number" name="ph-no" required></v3>
+                
+                  <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+              </form>   
+        </body>
+</html>
